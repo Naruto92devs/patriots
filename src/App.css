@@ -1,0 +1,815 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Patrick+Hand+SC&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background:#2F127C;
+    /* font-family: extra; */
+}
+
+.App {
+  overflow: hidden;
+}
+
+
+.btn img {
+    width: 10vw;
+}
+
+a:hover img {
+    transition: all .3s;
+    filter: invert(100%);
+}
+
+@font-face {
+    font-family:chil;
+    src: url(./fonts/chibold.ttf);
+}
+@font-face {
+    font-family:patrick;
+    src: url(./fonts/patrick.ttf);
+}
+p{
+    font-family: patrick;
+    color: white;
+    font-size: 1.55vw;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+.hero {
+    width: 100%;
+    height: 130vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(./Images/hero-bg.png) no-repeat;
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 5vw;
+}
+
+nav .logo {
+    width: 7vw;
+}
+
+nav .links {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+nav .links a img {
+    width: 3vw;
+}
+
+nav .links a.btn img {
+    width: 10vw;
+}
+
+.hero-img {
+    width: 45vw;
+    height: auto;
+    padding-top: 5vw;
+    animation: bounceInDown 1.2s;
+}
+
+.tremp {
+    width: 60vw;
+    animation: bounceInDown 1s;
+    margin-top: -12vw;
+    margin-left: -2.5vw;
+}
+
+.eagle {
+    position: absolute;
+    width: 10vw;
+    top: 20vw;
+    left: 3vw;
+}
+
+.hero_gif {
+  width: 10vw;
+  position: absolute;
+  left: 10vw;
+  bottom: 25vw;
+}
+
+.supply {
+    width: 100%;
+    height: auto;
+    padding: 0 15vw;
+    position: relative;
+    margin-top: -10vw;
+}
+
+.supply img.supply-bg {
+    width: 100%;
+}
+
+.supply p {
+    padding: 0 5vw;
+    padding-left: 20vw;
+    text-align: right;
+    margin-top: -12vw;
+}
+
+.supply .tremp1 {
+    position: absolute;
+    width: 18vw;
+    top: 1.7vw;
+    left: 20vw;
+}
+
+.supply .left {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 10%;
+    z-index: -1;
+}
+
+.supply .right {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    width: 10%;
+    z-index: -1;
+}
+
+.jar {
+    position: absolute;
+    width: 9vw;
+    top: -2vw;
+    right: 19vw;
+    z-index: 1;
+    animation: shakeX 1s infinite;
+}
+
+.tokenomics {
+    width: 100%;
+    padding: 5vw 17vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vw;
+    position: relative;
+}
+
+.tokenomics .token4 {
+  position: absolute;
+  width: 12vw;
+  top: 3vw;
+  right: 10vw;
+}
+
+.tokenomics .token5 {
+  position: absolute;
+  width: 10vw;
+  top: 4vw;
+  left: 5vw;
+}
+
+.tokenomics .token_bg {
+  width: 100%;
+}
+
+.tokenomics .content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3vw;
+  padding-left: 1.5vw;
+}
+
+.tokenomics .content .box {
+  width: 33.33%;
+  margin-top: -26vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5vw;
+}
+
+.tokenomics .content .box h2:nth-of-type(1) {
+  color: white;
+  margin-bottom: 1.5vw;
+  font-size: 3.5vw;
+}
+
+.tokenomics .content .box h2 {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3vw;
+  /* margin-left: 1.5vw; */
+}
+
+.tokenomics .content .box img {
+  width: 70%;
+}
+
+.about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vw 15vw;
+    position: relative;
+}
+
+.about img.heading, .about img.content {
+    width: 100%;
+}
+
+.about .con {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: -35vw;
+    padding: 0 5vw;
+}
+
+
+.about .usa {
+    width: 10vw;
+    position: absolute;
+    top: 60%;
+    right: 2vw;
+    transform: rotateZ(90deg);
+}
+
+.about .left {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5vw;
+    padding-top: 5vw;
+}
+
+.about .left li {
+    list-style: disc;
+    font-family: patrick;
+    color: white;
+    font-size: 1.5vw;
+    position: relative;
+    left: 3vw;
+}
+
+.about .right {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.about .right img {
+    width: 100%;
+    animation: heartBeat 5s infinite;
+}
+
+.about .right .about_gif {
+  position: absolute;
+  width: 80%;
+  left: 5%;
+}
+
+.map {
+    width: 100%;
+    padding: 10vw 17vw;
+    position: relative;
+}
+
+.map .heading {
+    width: 100%;
+}
+
+.map1 {
+  position: absolute;
+  width: 17vw;
+  top: 2vw;
+  left: 7vw;
+}
+
+.map2 {
+  position: absolute;
+  width: 8vw;
+  top: 50%;
+  right: 3vw;
+}
+
+.map3 {
+  position: absolute;
+  width: 8vw;
+  top: 60%;
+  left: 3vw;
+}
+
+.map .content {
+    background: white;
+    border: .15vw solid black;
+    padding: 2vw;
+}
+
+.map .con {
+    background: linear-gradient(186.75deg, #ED515B 24.37%, #E42031 77.44%);
+    width: 100%;
+    padding: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1vw;
+    column-gap: 1vw;
+}
+
+.map .box {
+    width: 48%;
+    background: white;
+    padding: 4vw 3vw;
+    padding-bottom: 0;
+    border-radius: 1vw;
+    border: .1vw solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.map .box h3 {
+    font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2vw;
+}
+
+.map .box li {
+    font-family:patrick;
+    list-style: disc;
+    margin-left: 2vw;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5vw;
+}
+
+.map .box img {
+    width: 70%;
+    align-self: center;
+    animation: fadeInUp 1s;
+}
+
+.f-img {
+    width: 100%;
+    margin-top: -69vw;
+    z-index: 1;
+}
+
+
+footer {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    margin-top: -15vw;
+    position: relative;
+    z-index: 100;
+    margin-left: 25vw;
+}
+
+footer .links {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+footer .tremp3 {
+    position: absolute;
+    width: 25vw;
+    top: -17vw;
+    left: 25vw;
+}
+
+footer .links a img {
+    width: 3vw;
+}
+
+footer .links a.btn img {
+    width: 12vw;
+}
+
+@media(max-width:600px) {
+
+    .hero {
+        width: 100%;
+        height: 200vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav {
+        display: flex;
+        width: 100%;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding: 2vw 5vw;
+    }
+    
+    nav .logo {
+        width: 10vw;
+    }
+    
+    nav .links {
+        display: flex;
+        align-items: center;
+        gap: 2vw;
+    }
+    
+    nav .links a img {
+        width: 6vw;
+    }
+    
+    nav .links a.btn img {
+        width: 18vw;
+    }
+    
+    .hero-img {
+        width: 75vw;
+        height: auto;
+        padding-top: 10vw;
+    }
+    
+    .tremp {
+        width: 88vw;
+        margin-top: -19vw;
+        margin-left: -3vw;
+    }
+
+    .eagle {
+        width: 30vw;
+        top: 10vw;
+        left: 0;
+    }
+
+    .hero_gif {
+      width: 27vw;
+      position: absolute;
+      left: 5vw;
+      bottom: 25vw;
+    }
+
+    
+.supply {
+    width: 100%;
+    height: auto;
+    padding: 0 5vw;
+    position: relative;
+    margin-top: -7vw;
+}
+
+.supply img.supply-bg {
+    width: 100%;
+    height: 50vw;
+}
+
+.supply p {
+    padding: 0 5vw;
+    padding-left: 5vw;
+    text-align: center;
+    margin-top: -28vw;
+    font-size: 3.5vw;
+}
+
+.supply .tremp1 {
+    position: absolute;
+    width: 50vw;
+    top: 40vw;
+    left: 25vw;
+}
+
+.jar {
+    position: absolute;
+    width: 25vw;
+    top: -4vw;
+    right: 5vw;
+    z-index: 1;
+}
+
+/* 
+.jar {
+  position: absolute;
+  width: 12vw;
+  top: -3vw;
+  right: 15vw;
+  z-index: 1;
+  animation: shakeX 1s infinite;
+} */
+
+.tokenomics {
+  width: 100%;
+  padding: 5vw 5vw;
+  margin-top: 48vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.tokenomics .token4 {
+position: absolute;
+width: 17vw;
+top: 3vw;
+right: 3vw;
+}
+
+.tokenomics .token5 {
+position: absolute;
+width: 17vw;
+top: 4vw;
+left: 2vw;
+}
+
+.tokenomics .token_bg {
+width: 100%;
+}
+
+.tokenomics .content {
+width: 100%;
+display: flex;
+justify-content: space-between;
+padding: 0 3vw;
+padding-left: 1.5vw;
+}
+
+.tokenomics .content .box {
+width: 33.33%;
+margin-top: -37vw;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1.5vw;
+}
+
+.tokenomics .content .box h2:nth-of-type(1) {
+color: white;
+margin-bottom: 1.5vw;
+font-size: 4.5vw;
+}
+
+.tokenomics .content .box h2 {
+font-family: "Luckiest Guy", cursive;
+font-weight: 400;
+font-style: normal;
+font-size: 4vw;
+/* margin-left: 1.5vw; */
+}
+
+.tokenomics .content .box img {
+width: 70%;
+}
+
+
+.about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15vw 5vw;
+}
+
+.about .injec {
+    width: 20vw;
+    position: absolute;
+    top: 15vw;
+    right: 0vw;
+}
+
+.about .pta {
+    width: 10vw;
+    position: absolute;
+    top: 96%;
+    left: 0vw;
+}
+
+.about img.heading, .about img.content {
+    width: 100%;
+}
+
+.about img.content {
+    height: 130vw;
+}
+
+.about .con {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2vw;
+    justify-content: space-between;
+    margin-top: -120vw;
+    padding: 0 7vw;
+}
+
+.about .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3.5vw;
+    padding-top: 5vw;
+}
+
+.about .left p {
+    font-size: 3vw;
+}
+
+.about .left .btn img {
+    width: 25vw;
+    /* margin-left: 15vw; */
+}
+
+.about .left li {
+    list-style: none;
+    font-family: patrick;
+    color: white;
+    font-size: 3vw;
+    position: relative;
+    left: 0vw;
+}
+
+.about .right {
+    width: 80%;
+    margin-left: 5vw;
+}
+
+.about .right img {
+    width: 100%;
+}
+
+.about .usa {
+  width: 17vw;
+}
+
+.map {
+    width: 100%;
+    padding: 15vw 8vw;
+}
+
+.map .heading {
+    width: 100%;
+}
+
+
+.map1 {
+  position: absolute;
+  width: 27vw;
+  top: 2vw;
+  left: 4vw;
+}
+
+.map2 {
+  position: absolute;
+  width: 18vw;
+  top: 4vw;
+  right: 3vw;
+}
+
+.map3 {
+  position: absolute;
+  width: 16vw;
+  top: 97%;
+  left: 2vw;
+}
+
+.map .content {
+    background: white;
+    border: .25vw solid black;
+    padding: 5vw;
+}
+
+.map .con {
+    background: linear-gradient(186.75deg, #ED515B 24.37%, #E42031 77.44%);
+    width: 100%;
+    padding: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5vw;
+    column-gap: 5vw;
+}
+
+.map .box {
+    width: 100%;
+    background: white;
+    padding: 6vw;
+    padding-bottom: 0;
+    border-radius: 3vw;
+    border: .1vw solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.map .box h3 {
+    font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5vw;
+}
+
+.map .box li {
+    font-family:patrick;
+    list-style: disc;
+    margin-left: 2vw;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.5vw;
+}
+
+.map .box img {
+    width: 70%;
+    align-self: center;
+}
+
+
+
+.f-img {
+    width: 100%;
+    margin-top: -69vw;
+    z-index: -1;
+    position: relative;
+}
+
+
+footer {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    margin-top: -20vw;
+    padding-bottom: 4vw;
+    position: relative;
+    z-index: 100;
+    margin-left: 24vw;
+}
+
+footer .links {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+footer .tremp3 {
+    position: absolute;
+    width: 40vw;
+    top: -30vw;
+    left: 49vw;
+}
+
+footer .links a img {
+    width: 8vw;
+}
+
+footer .links a.btn img {
+    width: 20vw;
+}
+
+footer p {
+    font-size: 3vw;
+}
+
+}
